@@ -9,12 +9,10 @@ const categories = ['Все', 'Мясные', 'Вегетарианская', '�
 
 export const Categories: React.FC<CategoriesProps> = () => {
   return (
-    <div className="categories">
+    <div className='categories'>
       <ul>
         {categories.map((categoryName, i) => (
-          <li key={i}>
-            {categoryName}
-          </li>
+          <li key={i}>{categoryName}</li>
         ))}
       </ul>
     </div>
